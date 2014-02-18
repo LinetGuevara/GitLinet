@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script>
+        function mueveReloj() {
+            momentoActual = new Date()
+            hora = momentoActual.getHours()
+            minuto = momentoActual.getMinutes()
+            segundo = momentoActual.getSeconds()
+
+            horaImprimible = hora + " : " + minuto + " : " + segundo
+
+            document.form_reloj.reloj.value = horaImprimible
+            setTimeout("mueveReloj()",1000)
+
+        }
+    </script>
+</head>
+<body onload ="mueveReloj()">
+
+    <form name="form_reloj">
+        <input type ="text" name="reloj" size="10" />
+    </form>
+    <div>
+        <b>@ViewBag.Greeting Itgam</b>(Msg desde el View)
+    </div>
+</body>
+</html>
