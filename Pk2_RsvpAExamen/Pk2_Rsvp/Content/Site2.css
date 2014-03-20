@@ -1,0 +1,19 @@
+﻿#formu {
+    text-align:center;
+    width:70%;
+    font-family:Pristina;
+    background:#B4045F;
+    padding:0px;
+    border:10px solid rgba(228,7,168,1);
+    box-shadow:0px 10px 20px #787575;
+}
+#prueba
+{
+    border:10px solid #A9A9F5;
+    padding:35px;
+    margin:30px;
+    color:#B4045F;
+    font-family:'Comic Sans MS';
+    box-shadow:0px 10px 20px #787575;
+
+}

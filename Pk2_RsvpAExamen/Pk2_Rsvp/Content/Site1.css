@@ -1,0 +1,44 @@
+﻿#prueba{
+    width:70%;
+    background-color:#FA58AC;
+    border:10px solid #A9A9F5;
+    padding:35px;
+    margin:30px;
+    color:#0B2161;
+    font-family:'Comic Sans MS';
+    box-shadow:0px 10px 20px #787575;
+
+}
+#inicio
+{   width:70%;
+    background-color:#FA58AC;
+    border:15px solid #A9A9F5;
+    padding:50px;
+    margin:30px;
+    color:#000000;
+    font-family:'Comic Sans MS';
+    box-shadow:0px 10px 20px #787575;
+    text-align:right;
+}
+#invitacion
+{   width:70%;
+    font-family:'Lucida Sans';
+    background:#000;
+	width:100%;
+	text-align:center;
+
+}
+#subtitle{
+	width:90%;
+	padding:10px;}
+#font
+{   width:100%; 
+    background-color:#FA58AC;
+    border:10px solid #A9A9F5;
+    padding:35px;
+    margin:30px;
+    color:#0B2161;
+    font-family:'Comic Sans MS';
+    box-shadow:0px 10px 20px #787575;
+    
+}

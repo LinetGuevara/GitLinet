@@ -1,0 +1,39 @@
+﻿ .field-validation-error{
+     color:#FF0000;
+}
+.field-validation-valid
+{
+    display:none;
+}
+.input-validation-error
+{
+    border:1px solid #FF0000;
+    background-color: #fee;
+}
+.validation-summary-errors
+{
+    font-weight:bold;
+    color:#FF0000;
+}
+.validation-summary-valid
+{
+    display:none;
+}
+#prueba{
+    background-color:#FA58AC;
+    border: 5px solid  #A9A9F5;
+    padding:10px;
+    margin:250px;
+    font-family :'Comic Sans MS';
+    box-shadow:0px 5px 5px #787575;
+}
+#datos
+{   background-color:#FA58AC;
+    border:5px solid #A9A9F5;
+    padding:25px;
+    margin:200px;
+    color:#0B2161;
+    font-family:'Comic Sans MS';
+    box-shadow:0px 5px 5px #787575;
+}
+

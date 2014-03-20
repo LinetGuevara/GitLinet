@@ -1,0 +1,53 @@
+﻿@model Pk2_Rsvp.Models.GuestResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet"  type="text/css" href="~/Content/Site.css" />
+    <title>RsvpForm</title>
+</head>
+<body background="~/Content/gallo.jpg">
+    
+    <h1 id="datos"> ♣ Introduce tus datos para confirmar tú a asitencia la fiesta ♣</h1>
+      
+    @using (Html.BeginForm())
+    {
+        
+       
+    <h2 id="prueba">
+         @*Validacion de un formulario*@
+        @Html.ValidationSummary()
+
+    <center><img src="~/Content/coyote.jpg" /></center>
+    <p>Tu nombre: @Html.TextBoxFor(x => x.Name)</p>
+    <p>Tu correo electronico: @Html.TextBoxFor(x => x.Email)</p>
+    <p>Tu telefono: @Html.TextBoxFor(x => x.Phone)</p>
+         
+           <p>
+        ¿Asistiras a la Fiesta?
+        @Html.DropDownListFor(x => x.WillAttend,
+       new[]
+           {
+               new SelectListItem(){Text="Si,Ahi estare",
+               Value = bool.TrueString},
+               
+               new SelectListItem (){Text="No, no podre asistir",
+               Value = bool.FalseString}
+               
+           },
+           
+           "Escoge una opcion")
+            
+    </p><input type ="submit" value="submit RSVP" />
+ </h2>
+    
+    }
+    
+</body>
+</html>
