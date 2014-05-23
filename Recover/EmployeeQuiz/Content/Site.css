@@ -1,0 +1,21 @@
+﻿#prueba{
+    width:70%;
+    background-color:#FA58AC;
+    border:10px solid #A9A9F5;
+    padding:35px;
+    margin:30px;
+    color:#0B2161;
+    font-family:'Comic Sans MS';
+    box-shadow:0px 10px 20px #787575;
+}
+.Imagen{
+    margin:20px 10px 6px;
+    background-color:#FF0080; text-align:center; margin:150px;
+    border-radius:20px;
+    border-color:#000000;
+    margin:auto;
+    
+}
+.marca {
+   border-bottom-style: none, solid double, groove, ridge, inset, outset;
+}

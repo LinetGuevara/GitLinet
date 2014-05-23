@@ -1,0 +1,65 @@
+﻿@model EmployeeQuiz.Models.Employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/StyleSheet1.css" />
+    <title>WorkerView</title>
+</head>
+<body>
+     <div class="Index">
+        <h2><marquee>Empleado</marquee></h2>
+        @{
+            try{
+
+        
+        <center>
+        <img src="@Url.Content(Model.PhotoPath)"
+            alt="Sample Image"
+            width="250" height="300" /></center>
+        <center>
+            
+        <p style="font-family:'Bell MT'; font-size:20px">
+            <b>ID:</b>@Model.Id
+        </p>
+            
+        <p>
+            <b>NOMBRE:</b>@Model.Name
+        </p>
+        <p>
+            <b>APELLIDOS</b>@Model.FirstLastname @Model.SecondLastname
+        </p>
+        <p>
+            <b>SALARIO</b>@Model.Wage
+        </p>
+        <p>
+            <b>SEXO</b>@Model.Sex
+        </p>
+               
+        </center>
+            
+            
+        }
+        catch(Exception){
+            
+            <marging 250px></marging>
+           <img src="~/Photos/carita.jpg" 
+            alt="Sample Image"
+            width="250" height="300" />
+            <br />
+
+        @:<center><b id="error">'INTRODUCE TÚ ID:'</b></center>
+
+        }
+            @Html.ActionLink("Regresar", "Index");
+        }
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿@model EmployeeQuiz.Models.Employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/StyleSheet1.css" />
+    <title>Index</title>
+</head>
+<body>
+    <center>
+    <div class="Index">
+        <h1><marquee>Bienvenido al Sistema</marquee></h1>
+        @using (Html.BeginForm())
+        {
+            @*Validacion de formulario*@
+            @Html.ValidationSummary()
+            <span class="letra">Ingresar el código de empleado</span> 
+            <p>@Html.TextBoxFor(m => m.Id)</p>
+            <input class="negro" type="submit" value="Buscar Empleado" />
+        }
+        
+    </div>
+   </center>
+</body>
+</html>
+
+
