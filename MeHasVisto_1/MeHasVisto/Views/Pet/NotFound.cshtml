@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "NotFound";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                Para obtener más información sobre ASP.NET MVC, visite
+                <a href="http://asp.net/mvc" title="Sitio web de ASP.NET MVC">http://asp.net/mvc</a>.
+                La página incluye <mark>vídeos, cursos y ejemplos</mark> para ayudarle a sacar el máximo partido a ASP.NET MVC.
+                Si tiene alguna pregunta relacionada con ASP.NET MVC, visite
+                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="Foro de ASP.NET MVC">nuestros foros</a>.
+            </p>
+        </div>
+    </section>
+}
+
+ <h2>La información que buscaba no puedo ser encontrada</h2>
+<h2>Detalles</h2>
+<ul>
+    <li>Código de Error:</b>@ViewBag.ErrorCode</li>
+    <li>Descripción:</b>@ViewBag.Description</li>
+    <img src="~/Content/triste.jpg" width="300" height="200"/></ul>
+   <form name="f1" action="http://localhost:49163/" method="post">
+       <input type="submit" value="Regresar" />
+       
+</form>
+
+
